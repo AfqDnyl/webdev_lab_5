@@ -8,32 +8,29 @@
 </head>
 <body>
     <script>
-        const booksData = {
-                            "Books":
-                            [
-                                {
-                                    "title":"The Great Gatsby",
-                                    "author":"F. Scott Fitzgerald",
-                                    "pubYear":1925,
-                                    "genres":["Fiction","Classics"]
-                                },
-                                {    
-                                    "title":"To Kill a Mockingbird",
-                                    "author":"Harper Lee",
-                                    "pubYear":1960,
-                                    "genres":["Fiction","Coming-of-Age"]
-                                }
-                            ]
-                        };
+        const bookData = {
+            "books": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "pubYear": 1925,
+                    "genres": ["Fiction", "Classics"]
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "pubYear": 1960,
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
 
-        console.log(stuData.Students[0].title);
-        console.log(stuData.Students[0].author);
-        console.log(stuData.Students[0].pubYear);
-        console.log(stuData.Students[0].genres);
+        console.log(bookData.books[0].title); //for question a
+        console.log(bookData.books[1].author); //for question b
+        console.log(bookData.books[0].genres); //for question c
 
-        // Loop through the students and display the subjects
-        booksData.Books.forEach(books => {
-            console.log(books.genres);
+        bookData.books.forEach(book => {
+            console.log(book.genres);
         });
 
     </script>
